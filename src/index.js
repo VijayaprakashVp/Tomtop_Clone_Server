@@ -23,7 +23,7 @@ const {
 //   return res.redirect("https://faballey-clone.vercel.app/");
 // });
 
-app.use("/", HotdealsController);
+app.get("/", HotdealsController);
 
 app.use("/socials", SocialSavingController);
 app.use("/hotdeals", HotdealsController);
