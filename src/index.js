@@ -19,6 +19,10 @@ const {
   adding,
 } = require("./controllers/auth.controller");
 
+app.get("/", function (req, res) {
+  return res.redirect("https://faballey-clone.vercel.app/");
+});
+
 app.use("/socials", SocialSavingController);
 app.use("/hotdeals", HotdealsController);
 app.use("/products", ProductsController);
