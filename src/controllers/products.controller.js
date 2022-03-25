@@ -32,7 +32,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.patch(":id", async (req, res) => {
+router.patch("/:id", async (req, res) => {
   try {
     const products = await Products.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
